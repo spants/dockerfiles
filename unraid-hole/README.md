@@ -1,12 +1,11 @@
-# sagittarius-A
+# Buitl from sagittarius-A
 
 Zero-conf docker application that functions as a DNS black hole. Only 6MB in binary size. Based on the excellent image maintained by andyshinn.
 Functions without trust, replacing IP addresses in the input with a single build-time configurable address.
 
 ## Building
-`docker build -t arthurkay/sagittarius-a .`
-
-`docker run -p 53:53/tcp -p 53:53/udp --cap-add=NET_ADMIN arthurkay/sagittarius-a`
+sudo docker build -t spants/unraid-hole .
+docker run -d --name="unRaid-Hole" --net="host" -e TZ="Europe/London" --cap-add=NET_ADMIN spants/unraid-hole
 
 To add a hosts file to the list, load one into ./downloads using wget or curl in build.sh
 Currently the build image is <50MB, and requires <50MB to run.
