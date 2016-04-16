@@ -1,0 +1,86 @@
+# hpHosts - HJK only
+#
+# The following are hosts in the hpHosts database with the HJK classification ONLY.
+#
+0.0.0.0 localhost #IPv4 localhost
+::1 localhost #IPv6 localhost
+#
+# BAD SITES START HERE
+#
+0.0.0.0	05p.com
+0.0.0.0	100ksearches.com
+0.0.0.0	17173.com
+0.0.0.0	51.net
+0.0.0.0	51115.com
+0.0.0.0	9p.cn
+0.0.0.0	abroadsoftware.com
+0.0.0.0	afodo.com
+0.0.0.0	aoasa.com
+0.0.0.0	api.toptenreviews.com
+0.0.0.0	click.xmlmonetize.com
+0.0.0.0	core.insightexpressai.com
+0.0.0.0	datanotary.com
+0.0.0.0	easypic.com
+0.0.0.0	elephantlist.com
+0.0.0.0	emptyitfs.com
+0.0.0.0	femalesex.com
+0.0.0.0	filmsworlds.blogspot.co.uk
+0.0.0.0	filmsworlds.blogspot.com
+0.0.0.0	freetube.com
+0.0.0.0	gimmebargains.com
+0.0.0.0	homepage.emachines.com
+0.0.0.0	homepagle.com
+0.0.0.0	iblockpopups.com
+0.0.0.0	internet-browser.com
+0.0.0.0	js.kolmic.com
+0.0.0.0	ldkiekxc.rr.nu
+0.0.0.0	lycos.com.org
+0.0.0.0	meetyourmessenger.co.uk
+0.0.0.0	microsoft.com.org
+0.0.0.0	moobor.com
+0.0.0.0	naked.com
+0.0.0.0	naturalspy.com
+0.0.0.0	orgy.com
+0.0.0.0	pcspeedbooster.com
+0.0.0.0	plunderthesecurity.in
+0.0.0.0	poser-magic.de
+0.0.0.0	psn.cn
+0.0.0.0	qqwz.com
+0.0.0.0	qu123.com
+0.0.0.0	raunchy.com
+0.0.0.0	ruserv.com
+0.0.0.0	search.myidentitydefender.com
+0.0.0.0	search.ruserv.com
+0.0.0.0	serch-direct.com
+0.0.0.0	sitesure.com
+0.0.0.0	smouch.net
+0.0.0.0	spyass.com
+0.0.0.0	sweet-page.com
+0.0.0.0	t2cn.com
+0.0.0.0	www.05p.com
+0.0.0.0	www.100ksearches.com
+0.0.0.0	www.afodo.com
+0.0.0.0	www.emptyitfs.com
+0.0.0.0	www.femalesex.com
+0.0.0.0	www.find.fm
+0.0.0.0	www.freetube.com
+0.0.0.0	www.gimmebargains.com
+0.0.0.0	www.homepagle.com
+0.0.0.0	www.internet-browser.com
+0.0.0.0	www.meetyourmessenger.co.uk
+0.0.0.0	www.moobor.com
+0.0.0.0	www.naked.com
+0.0.0.0	www.orgy.com
+0.0.0.0	www.plunderthesecurity.in
+0.0.0.0	www.poser-magic.de
+0.0.0.0	www.raunchy.com
+0.0.0.0	www.ruserv.com
+0.0.0.0	www.sitesure.com
+0.0.0.0	www.smouch.net
+0.0.0.0	www.sweet-page.com
+0.0.0.0	www.transport-preservers.com
+0.0.0.0	www.www4search.net
+0.0.0.0	www4search.net
+0.0.0.0	youngteenporn.proboards89.com
+0.0.0.0	yyue.com
+# Hosts: 76

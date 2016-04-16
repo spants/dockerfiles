@@ -1,0 +1,3 @@
+docker run -d --name smokeping -p 8100:80 -v /etc/localtime:/etc/localtime:ro -v /mnt/disk9/docker/appdata/smokeping:/etc/smokeping:ro smokeping
+
+docker run -d --name smokeping -p 8100:80 -v /etc/localtime:/etc/localtime:ro smokeping

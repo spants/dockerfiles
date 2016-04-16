@@ -1,0 +1,2 @@
+#!/bin/bash
+exec /sbin/setuser abc /usr/sbin/mosquitto -c /config/mosquitto.conf 
