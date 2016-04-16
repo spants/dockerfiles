@@ -19,6 +19,7 @@ The passwords will be encrypted and stored in passwords.mqtt and the old passwor
 
 The contents of passwords.txt should look like this:
 
+
 bob:bobpassword
 fred:fredpassword
 
