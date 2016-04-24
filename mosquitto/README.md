@@ -5,26 +5,35 @@ Docker image for mosquitto
 
 ## Run
 
-    docker run -t -i --net="bridge" -p 1883:1883/tcp -p 9001:9001 -v /mnt/cache/app_config/mqtt/:/config:rw -e PGID=100 -e PUID=99 spants/mqtt
+    docker run -tip 1883:1883 -p 9001:9001 toke/mosquitto
+
+Exposes Port 1883 (MQTT) 9001 (Websocket MQTT)
+
+Alternatively you can use volumes to make the changes
+persistent and change the configuration.
+
+    mkdir -p /srv/mqtt/config/
+    mkdir -p /srv/mqtt/data/
+    mkdir -p /srv/mqtt/log/
+    # place your mosquitto.conf in /srv/mqtt/config/
+    # NOTE: You have to change the permissions of the directories
+    # to allow the user to read/write to data and log and read from
+    # config directory
+    # For TESTING purposes you can use chmod -R 777 /srv/mqtt/*
+    # Better use "-u" with a valid user id on your docker host
+
+    docker run -ti -p 1883:1883 -p 9001:9001 \
+    -v /srv/mqtt/config:/mqtt/config:ro \
+    -v /srv/mqtt/log:/mqtt/log \
+    -v /srv/mqtt/data/:/mqtt/data/ \
+    --name mqtt toke/mosquitto
 
 
-Passwords for Mosquitto
-=======================
-
-Mosquitto likes encrypted passwords, but these are difficult create for a docker instance.
-In the mosquitto.conf file, you will see the password file is called passwords.mqtt. Do not change this.
-
-To add passwords to the MQTT instance, just store a file called passwords.txt in this directory and restart the docker.
-The passwords will be encrypted and stored in passwords.mqtt and the old passwords.txt file will be deleted.
-
-The contents of passwords.txt should look like this:
+Volumes: /mqtt/config, /mqtt/data and /mqtt/log
 
 
-    bob:bobpassword
-    fred:fredpassword
+## Build
 
-
-The new passwords are added to the top of password.mqtt when they are encrypted. MQTT uses the first username/password
-combo that it finds. You can delete the old passwords manually if you wish.
-
-tony@spants.com - 3rd Sept 2015
+    git clone https://github.com/toke/docker-mosquitto.git
+    cd docker-mosquitto
+    docker build .
