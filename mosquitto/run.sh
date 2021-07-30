@@ -26,7 +26,7 @@ if [  -f "/config/passwords.txt" ]; then
     mv /config/passwords.txt /config/passwords.mqtt
 fi
 
-chmod -R 666 /config
+chmod -R 777 /config
 #chown -R abc:abc /config
 
 chown mosquitto:mosquitto -R /var/lib/mosquitto
